@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Javascript example</title>
+        <script>
+            /* 01.변수 초기화
+            var pi = 3.141592;
+            var radius = 10;
+
+            //출력
+            alert("결과는 " + (2*pi*radius));
+            */
+
+            /* 02.날짜
+            var date = new Date();
+            var year = date.getFullYear();
+            var month = date.getMonth() + 1;
+            var day = date.getDay() + 2;
+            var hour = date.getHours();
+            var min = date.getMinutes();
+            var sec = date.getSeconds();
+            var ms = date.getMilliseconds
+
+            alert(year + " " + month + " " + day);
+            */
+
+            //03.배열
+            // var array = [273, "문자열", true, function(){var i = 10;}, {}, [32,103]];
+            // alert(array[1]);
+
+            //04.반복문
+            // var output = 0;
+            // for (let index = 0; index <= 100; index++) {
+            //     output += index;
+            // }
+            // alert(output);
+
+            //05.함수-익명함수
+            // var func = function() {
+            //     alert("함수01");
+            //     alert("함수02");
+            // };
+            // alert(typeof (func) + ':' + func);
+            // func();
+
+            //06.함수-일반함수
+            // var result = 0;
+            // function func(x) {
+            //     return x * x * x;
+            // }
+            // result = func(8);
+            // alert(result);
+
+            //07.함수-콜백함수
+            function callTenTimes(fncparam) {
+                for (let index = 0; index < 10; index++) {
+                    fncparam();
+                }
+            }
+
+            // var fnc = function() {
+            //     alert("function call");
+            // }
+            
+            callTenTimes(function(){
+                alert("Anonymous call");
+            });
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
